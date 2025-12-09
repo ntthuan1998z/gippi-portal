@@ -1,3 +1,19 @@
+# Checklist
+  - Build tool: Vite for client-side rendered React applications
+  - Package manager: pnpm
+  - State managemnet: useState, useReducer, useContext and Zustand (optional)
+  - Data fetching: Tanstack query combined with axios
+  - Routing: React router v7
+  - CSS Styling: Utility-First-CSS (tailwind css) combine with CSS-in-CSS (SASS)
+  - UI library: shadcn/ui combine with radix
+  - Form: React hook form
+  - Table: Tanstack Table
+  - Project structure: Feature-based React architecture with ESLint + Prettier
+  - Authentication: Auth.js
+  - Setup  **dev containter**  theo docker file hiện để đảm bảo môi trường dev của team member giống nhau.
+  - Setup Eslint và Prettier theo chuẩn coding style guide của Airbnb [React style](https://airbnb.io/javascript/react/) đảm bảo chuẩn chung cho team member.
+  - Áp dụng template của ShadcnUI 
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
