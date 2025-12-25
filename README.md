@@ -59,6 +59,44 @@ export default defineConfig([
 ])
 ```
 
+## TypeScript Style Guide
+
+### Interface vs Type
+
+**📌 Khi nào dùng Interface:**
+- React/Component props
+- State types
+- Domain models (nếu có thể extend)
+
+**📌 Khi nào dùng Type:**
+- Union types/Constants
+- Utility types
+- Domain models (nếu cần union/intersection)
+
+**Ví dụ:**
+```typescript
+// ✅ Interface cho component props
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+  disabled?: boolean;
+}
+
+// ✅ Type cho union/constants
+type Status = 'pending' | 'success' | 'error';
+type Theme = 'light' | 'dark';
+
+// ✅ Interface cho domain models
+interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+// ✅ Type cho utility types
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+```
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
