@@ -1,8 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { authRoutes } from "./auth.route";
+import { dashboardRoutes } from "./dashboard.route";
 
 const router = createBrowserRouter([
-  authRoutes
+  authRoutes,
+  dashboardRoutes
 ]);
 
 export default function Router() {
